@@ -37,7 +37,8 @@
 .secciones{
   background-color: rgba(128, 128, 128, 0.4);
   border-radius: 1rem;
-  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .fondoBatman{
@@ -51,10 +52,38 @@
   background-size: 100%;
 }
 
+.fondoMaravilla{
+  background-image: url(../img/fondoMaravilla.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.fondoSuperman{
+  background-image: url(../img/fondoSuperman.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
 .img{
   position: relative;
   top: 50px;
   border-radius: 5rem;
+}
+
+.imgSuperman{
+  position: relative;
+  border-radius: 100px;
+  top: 50px;
+  width: 122px;
+}
+
+.imgMaravilla{
+  position: relative;
+  border-radius: 100px;
+  top: 50px;
+  width: 120px;
 }
 
 .parrafoHeroes{
@@ -63,6 +92,12 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
+  padding-top: 2rem
+}
+
+h3{
+  position: relative;
+  top: 60px;
 }
 
 button{
@@ -78,15 +113,51 @@ button{
   cursor: pointer;
 }
 
+
+.boton{
+  position: absolute;
+  height: 50px;
+  color: white;
+  padding: 1rem;
+  background-color: #00669F;
+  border-radius: 80px;
+  right:0%;
+  display: none;
+}
+
+.parrafoBoton{
+  position: relative;
+  font-size: 2rem;
+  line-height: 1.3rem;
+}
+
 /*FOOTER*/
 
 footer{
-  position: relative;
-  bottom: 0%;
+  position: fixed;
+  bottom: 0;
   background-color: #00669F;
   width:  100%;
   height: 50px;
   padding: 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #FFF9F9;
+  font-size: 1.5rem;
+}
+
+
+@media(max-width:768px){
+  .boton{
+    display: inline;
+  }
+}
+@media(max-width: 460px){
+  #harley{
+    display: none;
+  }
+}
+@media(max-width: 425px){
+  .boton{
+    display: none;
+  }
 }
